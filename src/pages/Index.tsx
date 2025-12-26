@@ -12,12 +12,12 @@ const Index = () => {
       <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl overflow-hidden">
         <img 
           src={heroImage} 
-          alt="Portfolio 2025 - Abdulla Shahad - Graphic Designer, Illustrator, Visualizer"
+          alt="Portfolio 2025 - Adonay Gesite - Graphic Designer, Illustrator, Visualizer"
           className="w-full h-auto"
         />
         <img 
           src={introImage} 
-          alt="Hello! I'm Abdulla Shahad - Graphic Designer, Illustrator, Visualizer"
+          alt="Hello! I'm Adonay Gesite - Graphic Designer, Illustrator, Visualizer"
           className="w-full h-auto"
         />
         <img 

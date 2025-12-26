@@ -7,7 +7,7 @@ const IntroSection = () => {
         <div className="bg-card rounded-lg shadow-2xl overflow-hidden">
           <img 
             src={introImage} 
-            alt="Hello! I'm Abdulla Shahad - Graphic Designer, Illustrator, Visualizer"
+            alt="Hello! I'm Adonay Gesite  - Graphic Designer, Illustrator, Visualizer"
             className="w-full h-auto object-contain"
           />
         </div>

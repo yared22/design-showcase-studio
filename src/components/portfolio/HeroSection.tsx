@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="bg-card rounded-lg shadow-2xl overflow-hidden">
           <img 
             src={heroImage} 
-            alt="Portfolio 2025 - Abdulla Shahad - Graphic Designer, Illustrator, Visualizer"
+            alt="Portfolio 2025 - Adonay Gesite  - Graphic Designer, Illustrator, Visualizer"
             className="w-full h-auto object-contain"
           />
         </div>
