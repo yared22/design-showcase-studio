@@ -40,6 +40,26 @@ const Index = () => {
           alt="What You'll Find Inside - Illustrations, Branding, Social Media, Storyboards, 3D Designs, Animations"
           className="w-full h-auto"
         />
+        
+        {/* What I Do Section */}
+        <div className="p-8 md:p-16 flex flex-col md:flex-row gap-8 md:gap-16">
+          <div className="md:w-1/3">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+              What I do
+            </h2>
+            <p className="text-2xl md:text-3xl text-primary/70 italic">
+              (and love doing)
+            </p>
+          </div>
+          <div className="md:w-2/3 grid grid-cols-3 gap-4">
+            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 1</div>
+            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 2</div>
+            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 3</div>
+            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 4</div>
+            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 5</div>
+            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 6</div>
+          </div>
+        </div>
         <img 
           src={thankYouImage} 
           alt="Thank You!"
