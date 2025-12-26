@@ -6,11 +6,11 @@ import thankYou from "@/assets/illustrations/thank-you.png";
 
 const Index = () => {
   return (
-    <main className="bg-background">
+    <main className="bg-card">
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 text-center">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="text-center">
           <p className="text-muted-foreground text-sm tracking-widest mb-4">PORTFOLIO 2025</p>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">Adonay Gesite</h1>
           <p className="text-lg md:text-xl text-muted-foreground">
@@ -20,8 +20,8 @@ const Index = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={sittingDrawing} 
@@ -42,8 +42,8 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row-reverse items-center gap-8">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={walking} 
@@ -74,8 +74,8 @@ const Index = () => {
       </section>
 
       {/* Tools Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={atDesk} 
@@ -98,8 +98,8 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row-reverse items-center gap-8">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={lyingPapers} 
@@ -134,8 +134,8 @@ const Index = () => {
       </section>
 
       {/* Portfolio Contents Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
             What You'll Find Inside
           </h2>
@@ -163,8 +163,8 @@ const Index = () => {
       </section>
 
       {/* What I Do Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row gap-8 md:gap-16">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl flex flex-col md:flex-row gap-8 md:gap-16">
           <div className="md:w-1/3">
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
               What I do
@@ -185,8 +185,8 @@ const Index = () => {
       </section>
 
       {/* Thank You Section */}
-      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 text-center">
+      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div className="w-full max-w-5xl text-center">
           <img 
             src={thankYou} 
             alt="Thank You!"
