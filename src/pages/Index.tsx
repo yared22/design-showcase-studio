@@ -28,6 +28,7 @@ const Index = () => {
               alt="Adonay drawing on chair"
               className="w-full max-w-sm mx-auto"
             />
+            
           </div>
           <div className="md:w-1/2 text-center md:text-left">
             <p className="text-muted-foreground text-sm tracking-widest mb-2">HELLO!</p>
