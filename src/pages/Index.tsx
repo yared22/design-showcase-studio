@@ -5,17 +5,13 @@ import lyingPapers from "@/assets/illustrations/lying-papers.png";
 import thankYou from "@/assets/illustrations/thank-you.png";
 
 const Index = () => {
-    const currentYear: number = new Date().getFullYear();
   return (
     <main className="bg-background min-h-screen flex items-center justify-center p-4 md:p-8">
       <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl overflow-hidden">
         
         {/* Hero Section */}
         <section className="p-8 md:p-16 text-center">
-         <p className="text-muted-foreground text-sm tracking-widest mb-4">
-  PORTFOLIO <span className="ml-2">{currentYear}</span>
-</p>
-
+          <p className="text-muted-foreground text-sm tracking-widest mb-4">PORTFOLIO 2025</p>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">Adonay Gesite</h1>
           <p className="text-lg md:text-xl text-muted-foreground">
             Graphic Designer, Illustrator, Visualizer
