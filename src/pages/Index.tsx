@@ -6,20 +6,22 @@ import thankYou from "@/assets/illustrations/thank-you.png";
 
 const Index = () => {
   return (
-    <main className="bg-background min-h-screen flex items-center justify-center p-4 md:p-8">
-      <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl overflow-hidden">
-        
-        {/* Hero Section */}
-        <section className="p-8 md:p-16 text-center">
+    <main className="bg-background">
+      
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 text-center">
           <p className="text-muted-foreground text-sm tracking-widest mb-4">PORTFOLIO 2025</p>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">Adonay Gesite</h1>
           <p className="text-lg md:text-xl text-muted-foreground">
             Graphic Designer, Illustrator, Visualizer
           </p>
-        </section>
+        </div>
+      </section>
 
-        {/* Intro Section */}
-        <section className="p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
+      {/* Intro Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={sittingDrawing} 
@@ -36,10 +38,12 @@ const Index = () => {
               Graphic Designer, Illustrator, Visualizer
             </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* About Section */}
-        <section className="p-8 md:p-16 flex flex-col md:flex-row-reverse items-center gap-8">
+      {/* About Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={walking} 
@@ -66,10 +70,12 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Tools Section */}
-        <section className="p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
+      {/* Tools Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={atDesk} 
@@ -88,10 +94,12 @@ const Index = () => {
               <span className="bg-primary/10 text-primary px-4 py-2 rounded-full">Procreate</span>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Experience Section */}
-        <section className="p-8 md:p-16 flex flex-col md:flex-row-reverse items-center gap-8">
+      {/* Experience Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="md:w-1/2">
             <img 
               src={lyingPapers} 
@@ -122,10 +130,12 @@ const Index = () => {
               </li>
             </ul>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Portfolio Contents Section */}
-        <section className="p-8 md:p-16">
+      {/* Portfolio Contents Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
             What You'll Find Inside
           </h2>
@@ -149,10 +159,12 @@ const Index = () => {
               <p className="font-semibold text-primary">Animations</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* What I Do Section */}
-        <section className="p-8 md:p-16 flex flex-col md:flex-row gap-8 md:gap-16">
+      {/* What I Do Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 flex flex-col md:flex-row gap-8 md:gap-16">
           <div className="md:w-1/3">
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
               What I do
@@ -169,18 +181,20 @@ const Index = () => {
             <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 5</div>
             <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 6</div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Thank You Section */}
-        <section className="p-8 md:p-16 text-center">
+      {/* Thank You Section */}
+      <section className="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div className="w-full max-w-5xl bg-card rounded-lg shadow-2xl p-8 md:p-16 text-center">
           <img 
             src={thankYou} 
             alt="Thank You!"
             className="w-full max-w-lg mx-auto"
           />
-        </section>
+        </div>
+      </section>
 
-      </div>
     </main>
   );
 };
