@@ -1,26 +1,93 @@
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import sittingDrawing from "@/assets/illustrations/sitting-drawing.png";
 import walking from "@/assets/illustrations/walking.png";
 import atDesk from "@/assets/illustrations/at-desk.png";
 import lyingPapers from "@/assets/illustrations/lying-papers.png";
 import thankYou from "@/assets/illustrations/thank-you.png";
 
+// Animation variants for sections
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 1, 0.5, 1],
+    },
+  },
+};
+
+// Smooth scroll to section
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
+
 const Index = () => {
   return (
     <main className="bg-card">
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="text-center max-w-4xl mx-auto">
-          <p className="text-muted-foreground text-lg md:text-xl tracking-widest mb-6">PORTFOLIO 2025</p>
-          <h1 className="text-5xl md:text-8xl font-bold text-primary mb-6 leading-tight">Adonay Gesite</h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground">
+      <section id="home" className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden">
+        <motion.div 
+          className="text-center max-w-4xl mx-auto relative z-10"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          <motion.p variants={itemVariants} className="text-muted-foreground text-lg md:text-xl tracking-widest mb-6">
+            PORTFOLIO 2025
+          </motion.p>
+          <motion.h1 
+            variants={itemVariants}
+            className="text-5xl md:text-8xl font-bold text-primary mb-6 leading-tight"
+          >
+            Adonay Gesite
+          </motion.h1>
+          <motion.p variants={itemVariants} className="text-2xl md:text-3xl text-muted-foreground mb-12">
             Graphic Designer, Illustrator, Visualizer
-          </p>
+          </motion.p>
+          <motion.div variants={itemVariants} className="mt-12">
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="px-8 py-4 bg-primary text-white rounded-full text-lg font-medium hover:bg-primary/90 transition-all transform hover:scale-105"
+            >
+              Explore My Work
+            </button>
+          </motion.div>
+        </motion.div>
+        
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden -z-10">
+          <div className="absolute top-1/4 -left-20 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute top-1/2 -right-20 w-72 h-72 bg-secondary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
       </section>
 
       {/* Intro Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="about" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <img 
@@ -42,7 +109,10 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="skills" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl flex flex-col md:flex-row-reverse items-center gap-16">
           <div className="md:w-1/2">
             <img 
@@ -74,7 +144,10 @@ const Index = () => {
       </section>
 
       {/* Tools Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="tools" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <img 
@@ -106,7 +179,10 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="experience" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl flex flex-col md:flex-row-reverse items-center gap-16">
           <div className="md:w-1/2">
             <img 
@@ -142,7 +218,10 @@ const Index = () => {
       </section>
 
       {/* Portfolio Contents Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="portfolio" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl">
           <h2 className="text-4xl md:text-6xl font-bold text-primary mb-12 text-center">
             What You'll Find Inside
@@ -166,7 +245,10 @@ const Index = () => {
       </section>
 
       {/* What I Do Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="services" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl flex flex-col md:flex-row gap-12 md:gap-16">
           <div className="md:w-2/5">
             <h2 className="text-4xl md:text-6xl font-bold text-primary leading-tight mb-4">
@@ -190,7 +272,10 @@ const Index = () => {
       </section>
 
       {/* Thank You Section */}
-      <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
+      <section 
+        id="contact" 
+        className="min-h-screen flex items-center justify-center p-8 md:p-16 relative overflow-hidden"
+      >
         <div className="w-full max-w-6xl text-center">
           <img 
             src={thankYou} 
