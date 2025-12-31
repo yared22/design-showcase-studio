@@ -9,10 +9,25 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1600px",
       },
     },
     extend: {
+      fontSize: {
+        '2xs': '0.7rem',
+        '3xl': '1.75rem',
+        '4xl': '2.5rem',
+        '5xl': '3.5rem',
+        '6xl': '4.5rem',
+        '7xl': '5.5rem',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '26': '6.5rem',
+        '30': '7.5rem',
+        '34': '8.5rem',
+      },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },

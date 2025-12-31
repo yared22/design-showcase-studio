@@ -10,10 +10,10 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="text-center">
-          <p className="text-muted-foreground text-sm tracking-widest mb-4">PORTFOLIO 2025</p>
-          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">Adonay Gesite</h1>
-          <p className="text-lg md:text-xl text-muted-foreground">
+        <div className="text-center max-w-4xl mx-auto">
+          <p className="text-muted-foreground text-lg md:text-xl tracking-widest mb-6">PORTFOLIO 2025</p>
+          <h1 className="text-5xl md:text-8xl font-bold text-primary mb-6 leading-tight">Adonay Gesite</h1>
+          <p className="text-2xl md:text-3xl text-muted-foreground">
             Graphic Designer, Illustrator, Visualizer
           </p>
         </div>
@@ -21,21 +21,20 @@ const Index = () => {
 
       {/* Intro Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <img 
               src={sittingDrawing} 
               alt="Adonay drawing on chair"
-              className="w-full max-w-sm mx-auto"
+              className="w-full max-w-md mx-auto"
             />
-            
           </div>
           <div className="md:w-1/2 text-center md:text-left">
-            <p className="text-muted-foreground text-sm tracking-widest mb-2">HELLO!</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <p className="text-muted-foreground text-lg md:text-xl tracking-widest mb-4">HELLO!</p>
+            <h2 className="text-4xl md:text-6xl font-bold text-primary mb-6">
               I'm Adonay Gesite
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-2xl md:text-3xl text-muted-foreground">
               Graphic Designer, Illustrator, Visualizer
             </p>
           </div>
@@ -44,30 +43,30 @@ const Index = () => {
 
       {/* About Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl flex flex-col md:flex-row-reverse items-center gap-8">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row-reverse items-center gap-16">
           <div className="md:w-1/2">
             <img 
               src={walking} 
               alt="Adonay walking"
-              className="w-full max-w-sm mx-auto"
+              className="w-full max-w-md mx-auto"
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-primary mb-8 text-center md:text-left">
               A little about me
             </h2>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-muted/50 rounded-lg p-4 text-center">
-                <p className="font-semibold text-primary">Illustration</p>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
+                <p className="font-bold text-xl text-primary">Illustration</p>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4 text-center">
-                <p className="font-semibold text-primary">Typography</p>
+              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
+                <p className="font-bold text-xl text-primary">Typography</p>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4 text-center">
-                <p className="font-semibold text-primary">Creative Direction</p>
+              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
+                <p className="font-bold text-xl text-primary">Creative Direction</p>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4 text-center">
-                <p className="font-semibold text-primary">Brand Identity</p>
+              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
+                <p className="font-bold text-xl text-primary">Brand Identity</p>
               </div>
             </div>
           </div>
@@ -76,23 +75,31 @@ const Index = () => {
 
       {/* Tools Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <img 
               src={atDesk} 
               alt="Adonay at desk"
-              className="w-full max-w-sm mx-auto"
+              className="w-full max-w-md mx-auto"
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-primary mb-8 text-center md:text-left">
               Tools I'm fluent in
             </h2>
-            <div className="flex flex-wrap gap-3">
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full">Adobe Creative Suite</span>
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full">Figma</span>
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full">Blender</span>
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full">Procreate</span>
+            <div className="flex flex-wrap gap-4">
+              <span className="bg-primary/10 hover:bg-primary/20 text-primary text-lg px-6 py-3 rounded-full transition-colors">
+                Adobe Creative Suite
+              </span>
+              <span className="bg-primary/10 hover:bg-primary/20 text-primary text-lg px-6 py-3 rounded-full transition-colors">
+                Figma
+              </span>
+              <span className="bg-primary/10 hover:bg-primary/20 text-primary text-lg px-6 py-3 rounded-full transition-colors">
+                Blender
+              </span>
+              <span className="bg-primary/10 hover:bg-primary/20 text-primary text-lg px-6 py-3 rounded-full transition-colors">
+                Procreate
+              </span>
             </div>
           </div>
         </div>
@@ -100,34 +107,34 @@ const Index = () => {
 
       {/* Experience Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl flex flex-col md:flex-row-reverse items-center gap-8">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row-reverse items-center gap-16">
           <div className="md:w-1/2">
             <img 
               src={lyingPapers} 
               alt="Adonay lying on papers"
-              className="w-full max-w-sm mx-auto"
+              className="w-full max-w-md mx-auto"
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-primary mb-8 text-center md:text-left">
               Where I've worked
             </h2>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Schbang
+            <ul className="space-y-4 text-xl md:text-2xl text-muted-foreground">
+              <li className="flex items-center gap-4 group">
+                <span className="w-3 h-3 bg-primary rounded-full group-hover:scale-125 transition-transform"></span>
+                <span className="group-hover:text-primary transition-colors">Schbang</span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Beacon Infotech
+              <li className="flex items-center gap-4 group">
+                <span className="w-3 h-3 bg-primary rounded-full group-hover:scale-125 transition-transform"></span>
+                <span className="group-hover:text-primary transition-colors">Beacon Infotech</span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                World Happiness Code
+              <li className="flex items-center gap-4 group">
+                <span className="w-3 h-3 bg-primary rounded-full group-hover:scale-125 transition-transform"></span>
+                <span className="group-hover:text-primary transition-colors">World Happiness Code</span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Freelance Designer
+              <li className="flex items-center gap-4 group">
+                <span className="w-3 h-3 bg-primary rounded-full group-hover:scale-125 transition-transform"></span>
+                <span className="group-hover:text-primary transition-colors">Freelance Designer</span>
               </li>
             </ul>
           </div>
@@ -136,58 +143,55 @@ const Index = () => {
 
       {/* Portfolio Contents Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
+        <div className="w-full max-w-6xl">
+          <h2 className="text-4xl md:text-6xl font-bold text-primary mb-12 text-center">
             What You'll Find Inside
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-muted/50 rounded-lg p-6 text-center">
-              <p className="font-semibold text-primary">Illustrations</p>
-            </div>
-            <div className="bg-muted/50 rounded-lg p-6 text-center">
-              <p className="font-semibold text-primary">Branding</p>
-            </div>
-            <div className="bg-muted/50 rounded-lg p-6 text-center">
-              <p className="font-semibold text-primary">Social Media</p>
-            </div>
-            <div className="bg-muted/50 rounded-lg p-6 text-center">
-              <p className="font-semibold text-primary">Storyboards</p>
-            </div>
-            <div className="bg-muted/50 rounded-lg p-6 text-center">
-              <p className="font-semibold text-primary">3D Designs</p>
-            </div>
-            <div className="bg-muted/50 rounded-lg p-6 text-center">
-              <p className="font-semibold text-primary">Animations</p>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              'Illustrations', 'Branding', 'Social Media', 
+              'Storyboards', '3D Designs', 'Animations'
+            ].map((item) => (
+              <div 
+                key={item}
+                className="bg-muted/50 hover:bg-primary/10 rounded-xl p-6 text-center transition-colors group"
+              >
+                <p className="text-xl font-bold text-primary group-hover:scale-105 transition-transform">
+                  {item}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* What I Do Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl flex flex-col md:flex-row gap-8 md:gap-16">
-          <div className="md:w-1/3">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row gap-12 md:gap-16">
+          <div className="md:w-2/5">
+            <h2 className="text-4xl md:text-6xl font-bold text-primary leading-tight mb-4">
               What I do
             </h2>
             <p className="text-2xl md:text-3xl text-primary/70 italic">
               (and love doing)
             </p>
           </div>
-          <div className="md:w-2/3 grid grid-cols-3 gap-4">
-            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 1</div>
-            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 2</div>
-            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 3</div>
-            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 4</div>
-            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 5</div>
-            <div className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">Work 6</div>
+          <div className="md:w-3/5 grid grid-cols-2 md:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((num) => (
+              <div 
+                key={num}
+                className="aspect-square bg-muted/50 hover:bg-primary/10 rounded-xl flex items-center justify-center text-muted-foreground text-lg font-medium hover:text-primary transition-all hover:scale-105"
+              >
+                Work {num}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Thank You Section */}
       <section className="min-h-screen flex items-center justify-center p-8 md:p-16">
-        <div className="w-full max-w-5xl text-center">
+        <div className="w-full max-w-6xl text-center">
           <img 
             src={thankYou} 
             alt="Thank You!"
