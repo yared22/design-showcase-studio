@@ -125,18 +125,18 @@ const Index = () => {
             <h2 className="text-4xl md:text-6xl font-bold text-primary mb-8 text-center md:text-left">
               A little about me
             </h2>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
-                <p className="font-bold text-xl text-primary">Illustration</p>
+            <div className="grid grid-cols-2 gap-3 md:gap-6">
+              <div className="bg-muted/50 rounded-xl p-4 md:p-6 text-center hover:bg-primary/10 transition-colors overflow-hidden">
+                <p className="font-bold text-lg md:text-xl text-primary whitespace-nowrap overflow-hidden text-ellipsis">Illustration</p>
               </div>
-              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
-                <p className="font-bold text-xl text-primary">Typography</p>
+              <div className="bg-muted/50 rounded-xl p-4 md:p-6 text-center hover:bg-primary/10 transition-colors overflow-hidden">
+                <p className="font-bold text-lg md:text-xl text-primary whitespace-nowrap overflow-hidden text-ellipsis">Typography</p>
               </div>
-              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
-                <p className="font-bold text-xl text-primary">Creative Direction</p>
+              <div className="bg-muted/50 rounded-xl p-4 md:p-6 text-center hover:bg-primary/10 transition-colors overflow-hidden">
+                <p className="font-bold text-lg md:text-xl text-primary whitespace-nowrap overflow-hidden text-ellipsis">Creative Direction</p>
               </div>
-              <div className="bg-muted/50 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors">
-                <p className="font-bold text-xl text-primary">Brand Identity</p>
+              <div className="bg-muted/50 rounded-xl p-4 md:p-6 text-center hover:bg-primary/10 transition-colors overflow-hidden">
+                <p className="font-bold text-lg md:text-xl text-primary whitespace-nowrap overflow-hidden text-ellipsis">Brand Identity</p>
               </div>
             </div>
           </div>
@@ -226,16 +226,16 @@ const Index = () => {
           <h2 className="text-4xl md:text-6xl font-bold text-primary mb-12 text-center">
             What You'll Find Inside
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
             {[
               'Illustrations', 'Branding', 'Social Media', 
               'Storyboards', '3D Designs', 'Animations'
             ].map((item) => (
               <div 
                 key={item}
-                className="bg-muted/50 hover:bg-primary/10 rounded-xl p-6 text-center transition-colors group"
+                className="bg-muted/50 hover:bg-primary/10 rounded-xl p-4 md:p-6 text-center transition-colors group overflow-hidden"
               >
-                <p className="text-xl font-bold text-primary group-hover:scale-105 transition-transform">
+                <p className="text-lg md:text-xl font-bold text-primary whitespace-nowrap overflow-hidden text-ellipsis group-hover:scale-105 transition-transform">
                   {item}
                 </p>
               </div>
